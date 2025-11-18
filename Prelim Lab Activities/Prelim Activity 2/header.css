@@ -1,0 +1,67 @@
+.cv-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #556677;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+
+}
+
+.contact-item {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: rgba(252, 81, 133, 0.06);
+}
+
+.contact-item strong {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.contact-item a {
+  color: #e94570;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.contact-item a:hover {
+  color: #ff2a66;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+
+.separator {
+  color: #b8c7ce;
+  margin: 0 6px;
+  font-weight: 600;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #e94570, transparent);
+  margin-top: 30px;
+  border-radius: 3px;
+}
+

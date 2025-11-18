@@ -1,0 +1,74 @@
+.profile-section,
+.skills-section,
+.technical-skills {
+  margin-bottom: 45px;
+  padding-bottom: 10px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #364f6b;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #fc5185;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.profile-text {
+  font-size: 1.05rem;
+  color: #5a6a7a;
+  text-align: justify;
+  line-height: 1.9;
+  padding-right: 5px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top: 25px;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #5a6a7a;
+  line-height: 1.7;
+  transition: transform 0.25s ease, color 0.3s ease;
+}
+
+.skills-list li:hover {
+  color: #fc5185;
+  transform: translateX(4px);
+}
+
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 5px;
+  color: #fc5185;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: transform 0.25s ease;
+}
+
+.skills-list li:hover::before {
+  color: #69366b;
+  transform: scale(1.2);
+}
