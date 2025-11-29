@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+  min-height: 100vh;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  gap: 24px;
+}
+
+:host > * {
+  width: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+img {
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+input {
+  padding: 12px 16px;
+  margin: 0;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+  background: #fff;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+table td input {
+  width: 100%;
+  max-width: 220px;
+}
+
+input:focus {
+  border-color: #ffb2b2;
+  box-shadow: 0 0 0 3px rgba(255, 178, 178, 0.15), 0 2px 8px rgba(255, 160, 160, 0.2);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+input:hover {
+  border-color: #ffb2b2;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #242323;
+  color: #f8d2d2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+table td p {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  display: table;
+}
+
+table:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+table:not(:has(thead)) td {
+  padding: 24px 32px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+table:not(:has(thead)) tr {
+  border: none;
+}
+
+table:not(:has(thead)) tr:hover {
+  background: transparent;
+}
+
+/* Special styling for tables with buttons (note with action buttons) */
+table:has(button):not(:has(thead)):not(:has(button:only-child)) td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+table:has(button):not(:has(thead)):not(:has(button:only-child)) td:first-child {
+  flex: 1;
+  min-width: 200px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+table:has(button):not(:has(thead)):not(:has(button:only-child)) td:not(:first-child) {
+  flex: 0 0 auto;
+}
+
+table:has(button:only-child) {
+  display: flex;
+  flex-direction: column;
+}
+
+table:has(button:only-child) tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 32px;
+}
+
+table:has(button:only-child) tr > * {
+  width: 100%;
+}
+
+table:has(button:only-child) button {
+  align-self: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+table:has(button:only-child) p {
+  margin: 0 auto;
+  padding: 20px 24px;
+  background: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #ffb2b2;
+  line-height: 1.7;
+  color: #333;
+  text-align: center;
+  width: auto;
+}
+
+table:has(thead) {
+  margin: 0;
+}
+
+table thead {
+  background: #242323;
+  color: #f8d2d2;
+}
+
+table:has(thead) th {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: left;
+  border-bottom: 2px solid rgba(248, 210, 210, 0.2);
+}
+
+table:has(thead) td {
+  padding: 16px 20px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  transition: background-color 0.2s ease;
+  vertical-align: middle;
+}
+
+table:has(thead) tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+table:has(thead) tbody tr:hover {
+  background: #fff4f4;
+}
+
+table:has(thead) tbody tr:last-child td {
+  border-bottom: none;
+}
+
+table:has(thead) tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+table:has(thead) tbody tr:nth-child(even):hover {
+  background: #fff4f4;
+}
+
+table:has(thead) td:last-child p {
+  margin: 0;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: rgba(158, 158, 158, 0.15);
+  color: #616161;
+}
+
+ul, ol {
+  width: 100%;
+  background: #fff;
+  padding: 24px 40px;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  list-style: none;
+}
+
+table td ul,
+table td ol {
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+ul:hover, ol:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+ul li, ol li {
+  font-size: 15px;
+  margin: 12px 0;
+  padding-left: 8px;
+  line-height: 1.7;
+  position: relative;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+ul li:hover, ol li:hover {
+  color: #222;
+}
+
+ol {
+  counter-reset: custom-counter;
+}
+
+ol li {
+  counter-increment: custom-counter;
+}
+
+ol li::before {
+  content: counter(custom-counter) ". ";
+  color: #ff8f8f;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+table:has(input):not(:has(thead)):has(td:nth-child(2)) tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+table:has(input):not(:has(thead)):has(td:nth-child(2)) td {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+  padding: 24px 32px;
+}
+
+table:has(input):not(:has(thead)):has(td:nth-child(2)) td:has(input) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+table:has(input):not(:has(thead)):has(td:only-child) td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+}

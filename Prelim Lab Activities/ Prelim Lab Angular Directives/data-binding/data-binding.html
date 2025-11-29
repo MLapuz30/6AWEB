@@ -1,0 +1,41 @@
+<h1>{{ message }}</h1>
+
+<img [src]="imageUrl" [width]="w" [height]="h" [alt]="altText">
+
+<p [style.color]="textColor">This is  Mollie! What's the name of your Cat?</p>
+
+<input [(ngModel)]="yourName" placeholder="Enter your Cat's Name">
+<p>Meow, {{ yourName }}!</p>
+
+<button (click)="increment()">❤️</button>
+<button (click)="decrement()">😖</button>
+<p>Rate Count: {{ count }}</p>
+
+
+<!--Part 2-->
+
+<!--interpolation-->
+<h1>{{ studName }}</h1>
+
+<!--Property Binding-->
+<section>
+  <h2>Property Binding</h2>
+  <img [src]="imageUrl2" width="200"/>
+  <br/><br/>
+  <button [disabled]="isDisabled">Submit</button>
+</section>
+
+<!--Class Binding-->
+<h2>Class Binding</h2>
+<p [class.passing]="isPassing" [class.failing]="!isPassing">
+  Student Result: {{ isPassing ? 'Passed' : 'Failes' }}
+</p>
+
+<!--Style Binding-->
+<h2>Style Binding</h2>
+<div
+  [style.background]="boxColor"
+  [style.width]="boxSize"
+  [style.height]="boxSize"
+  class="box">
+</div>
