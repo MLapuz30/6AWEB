@@ -1,0 +1,83 @@
+<div>
+  <h1>Angular Pipes</h1>
+</div>
+
+<!-- Simple Date Pipe -->
+<div>
+  <h3>Date Pipe</h3>
+  Today's date : - {{presentDate | date}}
+</div>
+
+<!-- Parameters in Date -->
+<div>
+  <h3>Parameters in Date</h3>
+  This is a short date :- {{presentDate | date:'shortDate'}} <br/>
+  This line shows the full date :- {{presentDate | date:'fullDate'}} <br/>
+  This  will show a formatted date v:- {{presentDate | date:'M/dd/yyyy'}} <br/>
+  This indicates the hours and minutes :- {{presentDate | date:'h:mm'}} <br/>
+  Micah Lapuz
+</div>
+
+<!-- Chained Pipe -->
+<div>
+  <h3>Chained Pipes</h3>
+  Date with uppercase :- {{presentDate | date:'fullDate' | uppercase}} <br/>
+  Date with lowercase :- {{presentDate | date:'medium' | lowercase}} <br/>
+</div>
+
+<!-- Currency Pipe -->
+ <div>
+  <h3> Currency Pipes</h3>
+  <p>{{ price | currency:'':true}}</p>
+  <p>{{ price | currency:'INR' }}</p>
+ </div>
+
+
+<!-- Slice Pipe -->
+<div>
+  <h3>Slice Pipes</h3>
+  <h4>Start index:- {{Fruits | slice:2}}</h4>
+  <h4>Start and end index:- {{Fruits | slice:1:4}}</h4>
+  <h4>Negative index:- {{Fruits | slice:-2}}</h4>
+  <h4>Negative start and end index:- {{Fruits | slice:-4:-2}}</h4>
+</div>
+
+<!-- Decimal Pipe -->
+<div>
+  <h3>Decimal Pipes</h3>
+  <p>{{decimalNum1 | number}}</p>
+  <p>{{decimalNum2 | number}}</p>
+</div>
+
+<!-- Async Pipe -->
+<div>
+  <h3> Async Pipe</h3>
+  Seconds changing in Time: {{time$ | async | date: 'mediumTime'}}
+</div>
+
+<!-- Percent Pipe -->
+<div>
+  <h3>Percent Pipe</h3>
+  <p>A: {{ a | percent}}</p>
+  <p>B: {{ b | percent}}</p>
+</div>
+
+<!-- Title Case Pipe -->
+<div>
+  <h3>Title Case Pipe</h3>
+  <p>{{'hello world' | titlecase}}</p>
+  <p>{{'hEllO wOrLd' | titlecase}}</p>
+</div>
+
+<!-- Key Value Pipe -->
+<div>
+  <h3>Key Value Pipe</h3>
+  <p>Object</p>
+  @for (item of object | keyvalue; track item.key) {
+    <div>{{ item.key }}:{{ item.value }}</div>
+  }
+  <p>Map</p>
+  @for (item of map | keyvalue; track item.key) {
+    <div>{{ item.key }}:{{ item.value }}</div>
+  }
+</div>
