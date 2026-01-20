@@ -1,0 +1,108 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #f3f6fb, #e9eef5);
+  color: #1f2937;
+  padding: 20px;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  margin: 40px 0 16px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  border-left: 6px solid #3b82f6;
+  padding-left: 12px;
+}
+
+/* ===== TABLE BASE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TABLE HEADER ===== */
+th {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* ===== TABLE CELLS ===== */
+td {
+  padding: 14px 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #334155;
+}
+
+/* ===== ZEBRA STRIPES ===== */
+table tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+/* ===== ROW BORDERS ===== */
+tr.border-b td {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ===== HOVER EFFECT (WORKING) ===== */
+table tr {
+  transition: background-color 0.25s ease, box-shadow 0.25s ease,
+    transform 0.15s ease;
+}
+
+table tr:hover td {
+  background: linear-gradient(90deg, #eff6ff, #dbeafe);
+}
+
+table tr:hover {
+  box-shadow: inset 4px 0 0 #3b82f6, 0 6px 16px rgba(59, 130, 246, 0.25);
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+/* ===== COLUMN HIGHLIGHTS ===== */
+td:last-child {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Price column (Product table) */
+table:last-of-type td:last-child {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+/* ===== ROUNDED CORNERS ===== */
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
