@@ -1,0 +1,119 @@
+/* Page styling */
+:host {
+  display: block;
+  padding: 24px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Section titles */
+h2 {
+  margin: 32px 0 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: 0.02em;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #3b82f6);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* Table base */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+}
+
+/* Table header */
+thead {
+  background: linear-gradient(90deg, #4f46e5, #3b82f6);
+}
+
+thead th {
+  padding: 14px 18px;
+  text-align: center; /* Center headers */
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f8fafc;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Table body */
+tbody tr {
+  transition: all 0.25s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+tbody tr:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0.08),
+    rgba(59, 130, 246, 0.08)
+  );
+  transform: scale(1.005);
+}
+
+/* Table cells */
+tbody td {
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  color: #334155;
+  text-align: center; /* Center table data */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Accent first column */
+tbody td:first-child {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+.px-4 { padding-left: 16px; padding-right: 16px; }
+.border-b { border-bottom: 1px solid #e5e7eb; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  table { box-shadow: none; background: transparent; }
+  thead { display: none; }
+  tbody tr {
+    display: block;
+    background: #ffffff;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    padding: 8px 0;
+  }
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #6366f1;
+  }
+}
