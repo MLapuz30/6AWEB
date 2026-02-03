@@ -1,0 +1,40 @@
+<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="bg-[url(https://www.backwoodshome.com/bhm/wp-content/uploads/2015/12/architecture-buildings-city-373893-1024x683.jpg)] bg-cover">
+<div class="bg-white/40">
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
+    </div>
+    <div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      </div>
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold text-balance text-gray-900 sm:text-7xl">Research Conferences</h1>
+        <p class="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-3xl">Join our online events this 2026!</p>
+        <p class="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-2xl">Early bird registration</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="text-center">
+        <h1 class="mt-10 mb-10 text-5xl font-semibold text-balance text-gray-900 sm:text-5xl">Join our Research Conferences around the Globe!</h1>
+
+<div class = "flex flex-row space-x-10 justify-center">
+  @for (item of countries; track $index) {
+<div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs my-10">
+    <a href="#">
+        <img class="rounded-base" [src]="item.img" alt="" style="width: 400px; height: 200px;" />
+    </a>
+    <a href="#">
+        <h5 class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading">{{item.name}}.</h5>
+    </a>
+    <p class="mb-6 text-body"> {{item.desc}} </p>
+    <a href="#" class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
+        {{item.topic}}
+    </a>
+</div>
+  }
+</div>
+</div>

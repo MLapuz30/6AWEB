@@ -1,0 +1,64 @@
+<div class="bg-[url(https://www.mckinsey.com/~/media/mckinsey/industries/public%20and%20social%20sector/our%20insights/how%20to%20make%20a%20city%20great/citiesnew_largefeature_1536x1152.jpg?mw=677&car=42:25)] bg-cover">
+  <div class="bg-white/40">
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
+      </div>
+      <div class="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56">
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold text-balance text-gray-900 sm:text-5xl">Join Our Mailing List!</h1>
+          <p class="mt-8 text-lg font-medium text-pretty text-gray-900 sm:text-2xl">Join and meet thousands of academicians around the globe and stay updated!</p>
+
+          <button class="mt-8 inline-flex items-center rounded-base px-4 py-2.5
+            border-2 border-black
+            bg-white text-black
+            text-sm font-medium leading-5
+            hover:bg-black hover:text-white
+            focus:outline-none focus:ring-4 focus:ring-black/30
+            shadow-xs">Click here to JOIN!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-6 py-12 bg-white">
+  <h2 class="text-4xl font-semibold text-gray-900 text-center mb-6">Fill the form below:</h2>
+  <form class="mt-8 space-y-6" #joinForm="ngForm">
+    <div class="space-y-4">
+      <div class="flex space-x-4">
+        <div class="flex-1">
+          <label for="firstname" class="block text-sm font-medium text-gray-700">Firstname:</label>
+          <input type="text" id="firstname" [(ngModel)]="formData.firstname" name="firstname" class="mt-1 block w-full p-2 border rounded-md" />
+        </div>
+
+        <div class="flex-1">
+          <label for="lastname" class="block text-sm font-medium text-gray-700">Lastname:</label>
+          <input type="text" id="lastname" [(ngModel)]="formData.lastname" name="lastname" class="mt-1 block w-full p-2 border rounded-md" />
+        </div>
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email Address:</label>
+        <input type="email" id="email" [(ngModel)]="formData.email" name="email" class="mt-1 block w-full p-2 border rounded-md" />
+      </div>
+
+      <div>
+        <label for="institution" class="block text-sm font-medium text-gray-700">Institution:</label>
+        <input type="text" id="institution" [(ngModel)]="formData.institution" name="institution" class="mt-1 block w-full p-2 border rounded-md" />
+      </div>
+    </div>
+
+    <div>
+      <button type="submit" [disabled]="!joinForm.form.valid" class="inline-flex items-center rounded-base px-4 py-2.5
+        border-2 border-black
+        bg-white text-black
+        text-sm font-medium leading-5
+        hover:bg-black hover:text-white
+        focus:outline-none focus:ring-4 focus:ring-black/30
+        shadow-xs">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
