@@ -1,0 +1,75 @@
+/* Container for Welcome section */
+.welcome-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: #f0f4f8; /* same professional light blue-gray */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 50, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #0b1f3f;
+  line-height: 1.6;
+}
+
+/* Main heading */
+.welcome-container h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #0b3d91; /* deep professional blue */
+}
+
+/* Subheading */
+.welcome-container h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #0b3d91;
+  border-bottom: 2px solid #0b3d91;
+  padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.welcome-container p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #0b1f3f;
+}
+
+/* Latest Updates list */
+.welcome-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-container ul li {
+  background: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,50,0.05);
+  transition: all 0.3s ease;
+}
+
+.welcome-container ul li:hover {
+  box-shadow: 0 8px 20px rgba(0,0,50,0.1);
+  transform: translateY(-2px);
+}
+
+/* Post title */
+.welcome-container ul li strong {
+  font-size: 1.1em;
+  color: #0b3d91;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Post body */
+.welcome-container ul li p {
+  font-size: 0.95em;
+  color: #0b1f3f;
+  margin: 0;
+}

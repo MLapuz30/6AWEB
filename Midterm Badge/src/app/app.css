@@ -1,0 +1,37 @@
+/* Global font */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Navbar example */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.4);
+  font-family: 'Poppins', sans-serif; /* Ensure font applied here */
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #c7d2fe;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 3rem;
+}
+
+:host {
+  font-family: 'Poppins', sans-serif;
+}

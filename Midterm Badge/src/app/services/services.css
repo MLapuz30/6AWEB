@@ -1,0 +1,92 @@
+/* Container for services */
+.services-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: #f0f4f8; /* same professional light blue-gray */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 50, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #0b1f3f;
+}
+
+/* Heading */
+.services-container h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0b3d91; /* deep blue */
+}
+
+/* Search input */
+.services-container input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 1px solid #cbd6e2;
+  background: #ffffff;
+  font-size: 1em;
+  color: #0b1f3f;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.services-container input[type="text"]:focus {
+  border-color: #0b3d91;
+  box-shadow: 0 0 8px rgba(11, 61, 145, 0.3);
+}
+
+/* Loading and error messages */
+.services-container p {
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+.services-container p[style*="color:red"] {
+  font-weight: 500;
+}
+
+/* No records message */
+.services-container div {
+  font-size: 0.95em;
+  color: #0b3d91;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* List of services */
+.services-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-container ul li {
+  background: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,50,0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.services-container ul li:hover {
+  box-shadow: 0 8px 20px rgba(0,0,50,0.1);
+  transform: translateY(-2px);
+}
+
+/* Service title */
+.services-container ul li strong {
+  font-size: 1.1em;
+  color: #0b3d91;
+}
+
+/* Service body snippet */
+.services-container ul li p {
+  font-size: 0.95em;
+  color: #0b1f3f;
+  margin-top: 5px;
+}
